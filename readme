@@ -1,0 +1,3 @@
+Tikz + standalone で四隅に若干（たぶん0.5pt）のアキが出て困っている問題
+
+たぶんnode のborder なんじゃないかと……
