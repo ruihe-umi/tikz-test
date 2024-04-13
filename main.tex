@@ -9,7 +9,7 @@
   \clearpage
   \begin{tikzpicture}
     \node[text width=90mm](text){node の高さより高く設定してもわずかにズレてるのを思い出したので追記};
-    \draw[cyan](text.north west)--($(text.south west)-(0,5mm)$);
-    \draw[magenta](text.north west)--(text.north east);
+    \draw[cyan,line cap=rect](text.north west)--($(text.south west)-(0,5mm)$);
+    \draw[magenta,line cap=rect](text.north west)--(text.north east);
   \end{tikzpicture}
 \end{document}
