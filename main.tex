@@ -1,8 +1,15 @@
 \documentclass[tikz,class=jlreq]{standalone}
+\usetikzlibrary{calc}
 \begin{document}
   \begin{tikzpicture}
     \node[text width=90mm](text){とりなくこゑすゆめさませみよあけわたるひんかしをそらいろはえておきつへにほふねむれゐぬもやのうち};
     \draw[cyan](text.north west)--(text.south west);
+    \draw[magenta](text.north west)--(text.north east);
+  \end{tikzpicture}
+  \clearpage
+  \begin{tikzpicture}
+    \node[text width=90mm](text){node の高さより高く設定してもわずかにズレてるのを思い出したので追記};
+    \draw[cyan](text.north west)--($(text.south west)-(0,5mm)$);
     \draw[magenta](text.north west)--(text.north east);
   \end{tikzpicture}
 \end{document}
